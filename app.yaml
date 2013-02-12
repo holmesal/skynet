@@ -28,9 +28,14 @@ handlers:
 - url: /beta
   static_dir: beta
 
-
-- url: /hello
-  script: hello.app
+- url: /build.*
+  script: build.app
+- url: /pusher.*
+  script: pusher.app
+- url: /test.*
+  script: test.app
+- url: /.*
+  script: main.app
 
 
 libraries:

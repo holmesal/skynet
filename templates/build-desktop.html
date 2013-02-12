@@ -1,0 +1,699 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Build something awesome.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    
+    
+<!--     <link href="../css/bootstrap-responsive.min.css" rel="stylesheet"> -->
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Skynet</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    	
+    	<style type="text/css">
+	    	.preview{
+		    	text-align: center;
+	    	}
+	    	
+	    	.clearfix{
+		    	clear: both;
+	    	}
+	    	
+/* 	    	global */
+	    	
+	    	.controloptions{
+		    	text-align: left;
+	    	}
+	    	
+	    	.center{
+		    	margin-left: auto;
+		    	margin-right: auto;
+		    	float: none;
+		    	clear: both;
+	    	}
+	    	
+	    	.control{
+		    	margin-bottom: 20px;
+	    	}
+	    	
+	    	.content{
+		    	background-image: url(../img/iphone-frame.png);
+		    	background-repeat: no-repeat;
+		    	border-radius: 5px;
+		    	height: 850px;
+		    	width: 400px;
+		    	padding-left: 40px;
+		    	padding-right: 36px;
+		    	padding-top: 174px;
+		    	position: relative;
+	    	}
+	    	
+	    	#sortable > .element{
+		    	border: none;
+	    	}
+	    	
+	    	.cover{
+	    		position: absolute;
+		    	top:0;
+		    	left:0;
+		    	right: 0;
+		    	bottom:0;
+		    	z-index: 999;
+/* 		    	background-color: red; */
+	    	}
+	    	
+	    	.element{
+		    	width: 400px;
+/* 		    	height: 100px; */
+/* 		    	background-color: rgba(142,249,143,0.64); */
+		    	display: inline-block;
+		    	margin-left: auto;
+		    	margin-right: auto;
+		    	border: 1px dashed #9f9f9f;
+		    	padding-top: 30px;
+		    	padding-bottom: 30px;
+		    	position: relative;
+	    	}
+	    	
+	    	.element:hover{
+		    	cursor: move;
+	    	}
+	    	
+	    	.colhead{
+		    	font-size: 20pt;
+		    	font-weight: 400;
+	    	}
+	    	
+	    	.textcenter{
+		    	text-align: center;
+	    	}
+	    	
+	    	.btnlaunch{
+		    	font-size: 20pt;
+		    	line-height: 120%;
+		    	padding-left: 30px;
+		    	padding-right: 30px;
+	    	}
+	    	
+	    	.control-header{
+		    	margin-bottom: 0px;
+		    	margin-top: 20px;
+	    	}
+	    	
+	    	.banner{
+		    	width: 100%;
+		    	height: 55px;
+		    	background-image: url(../img/banner.png);
+	    	}
+	    	
+	    	#sortable{
+		    	height: 100%;
+		    	width: 400px;
+/* 		    	height: 685px; */
+		    	height: 630px;
+		    	background-color: white;
+		    	background-color: #f8f8f8;
+		    	background-image: url(../img/bgpattern.png);
+		    	overflow: auto;
+		    	margin-left: 0px;
+		    	text-align: center;
+		    	
+/* 		    	padding-top: 50px; */
+	    	}
+	    	
+	    	#sortable-prompt{
+		    	top:174px;
+		    	bottom:0;
+		    	left:40px;
+		    	right:36px;
+		    	position: absolute;
+/* 		    	background-color: red; */
+	    	}
+	    	
+	    	#sortable-prompt-text{
+		    	color: #bebebe;
+		    	font-size: 25pt;
+		    	margin-top: 50%;
+		    	text-align: center;
+/* 		    	background-color: red; */
+	    	}
+	    	
+	    	ul{
+		    	list-style: none;
+		    	
+	    	}
+	    	
+	    	.elementbank{
+		    	text-align: center;
+		    	margin-bottom: 100px;
+	    	}
+	    	
+/* 	    	elements */
+
+			.element-button{
+				text-align: center;
+			}
+			
+			.element-button > a{
+				width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.element-slider > input{
+				width: 80%;
+			}
+			
+			
+			
+			.options-container{
+				margin-top: 100px;
+			}
+			
+			
+			
+			.element-options{
+				width: 100%;
+				clear:both;
+				margin-top: 20px;
+/* 				background-color: red; */
+			}
+			
+			.element-inputs{
+				margin-left: 20px;
+			}
+			
+			.element-type{
+/* 				float: left; */
+				font-weight: 600;
+				color: #aeaeae;
+				margin-bottom: 5px;
+			}
+			
+			.input-wrapper{
+				margin-right: 40px;
+				float: left;
+			}
+			
+			
+/* 			code styles */
+			.code{
+				margin-top: 100px;
+			}
+			
+			.code-inner{
+				font: 100% Monaco, "Courier New", Courier, mono;
+				line-height: 150%;
+			}
+			
+			.comment{
+				color: #909090
+			}
+			
+			.orange{
+				color: #cb863f
+			}
+			
+			.blue{
+				color: #4591e7
+			}
+			
+			.privacy{
+				margin-top: 100px;
+			}
+			
+			.radio{
+				font-size: 12pt;
+/* 				margin-left: 20px; */
+			}
+			
+			.launch{
+				margin-top: 100px;
+				margin-bottom: 100px;
+			}
+	    	
+    	</style>
+
+		<div id="buildrow" class="row">
+				
+				
+				
+				<div class="span12 spacer visible-desktop" style="height:60px;"></div>
+				
+				<div id="appspan" class="span6">
+					<div><p class="lead colhead textcenter">Your App</p></div>
+					<div class="alert alert-info textcenter">Drag controls out of your app to remove them.</div>
+					<div class="content center">
+						<div id="sortable-prompt">
+							<p id="sortable-prompt-text" class="lead">Drag controls here</p>
+						</div>
+					<div class="banner"></div>
+					<ul id="sortable">
+						
+					</ul>
+					
+					</div>
+				</div>
+				
+				<div class="span6 textcenter">
+					<div><p class="lead colhead textcenter">Available Controls</p></div>
+					<div class="alert alert-info textcenter">Drag these controls over to your app to add them.</div>
+					<ul class="elementbank">
+					
+					<p class="lead control-header">The Switch:</p>
+					<p class="muted control-description">Turn things on. Turn them off again. Repeat.</p>
+					<li class="element draggable element-switch" data-name="" data-label-on="Switch On" data-label-off="Switch Off">
+						<div class="cover"></div>
+						<div class="btn-group" data-toggle="buttons-radio">
+							<button type="button" class="btn btn-primary btn-large active switch-on">Switch On</button>
+							<button type="button" class="btn btn-primary btn-large switch-off">Switch Off</button>
+						</div>
+					</li>
+					
+					
+					<p class="lead control-header">The Button:</p>
+					<p class="muted control-description">Push it. Things happen. Push it again.</p>
+					<li class="element draggable element-button" data-name="" data-label="Push Me">
+						<div class="cover"></div>
+						<a class="btn btn-large btn-success button">Push Me</a>
+					</li>
+					
+					<p class="lead control-header">The Slider:</p>
+					<p class="muted control-description">Set a value, any value.</p>
+					<li class="element draggable element-slider" data-name="" data-max="255" data-min="0" data-inc="1">
+						<input type="range">
+						<div class="cover"></div>
+					</li>
+					</ul>
+					<hr>
+					<a id="scrolltooptions" class="btn btn-info" href="#"><i class="icon-arrow-down icon-white"></i> I'm done adding controls</a>
+				</div>
+		</div>
+		
+		<div class="row">
+				
+				<div class="span10 center options-container">
+					<h1>Control Options</h1>
+					<p class="lead">Name your controls (you'll use these names in your code), and tweak control options.</p>
+					<div class="options">
+						<div class="alert alert-info">Add a control by dragging it to your app, and options for that control will appear here.</div>
+					</div>
+				</div>
+				
+				<div class="span10 center code">
+					<h1>Code</h1>
+					<p class="lead">Copy and paste this code to your arduino.</p>
+					<p class="lead">If you haven't already, make sure to <a href="#">download and install the skynet arduino library.</a></p>
+					<div class="code-inner well">
+						<span class="comment">//This is a comment</span><br>
+						 &nbsp; <span class="comment">//This is a comment</span><br>
+						 &nbsp; &nbsp; <span class="comment">//This is a comment</span>
+						 <br>
+						 <br>
+						<span class="orange">void <strong>setup</strong></span>(){</br>
+						<div id="listeners"></div>
+						<br>
+						}
+						<br>
+						<br>
+						<span class="orange">void <strong>loop</strong></span>(){<br><br>
+						<div id="listeners"></div>
+						<br>
+						}
+						
+						<div id="functionstubs"></div>
+					</div>
+				</div>
+				
+				<div class="span10 center privacy">
+					<h1>Privacy</h1>
+					<p class="lead">Change who can see and control this arduino.</p>
+					<label class="radio">
+						<input type="radio" name="radio-privacy" value="open">
+						<strong>Open</strong> - anyone can view and control this arduino.
+					</label>
+					<label class="radio">
+						<input type="radio" name="radio-privacy" value="public" checked>
+						<strong>Public</strong> - anyone can view this arduino, but only you can control it.
+					</label>
+					<label class="radio">
+						<input type="radio" name="radio-privacy" value="public">
+						<strong>Invisible</strong> - only you can view and control this arduino.
+					</label>
+				</div>
+			
+<!-- 			<hr> -->
+			
+			<div class="span12 textcenter center launch">
+				<p class="lead">Ready to launch? You can always come back and edit this page later.</p>
+				<a href="#" class="btn btn-success btn-large btnlaunch">Let's do it!</a>
+			</div>
+		</div>
+      
+      
+
+      <hr>
+
+      <footer>
+        <p>&copy; Skynet 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+	    
+	    
+	    function makeid()
+		{
+		    var text = "";
+		    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+		
+		    for( var i=0; i < 5; i++ )
+		        text += possible.charAt(Math.floor(Math.random() * possible.length));
+		
+		    return text;
+		}
+	    
+	    
+	    drop = function(element) { 
+	    	
+	    	//assign the element an id for js tracking
+	    	rando = makeid()
+	    	newelem = null
+	    	$("#sortable >").each(function(e){
+		    	if ($(this).attr('id') == undefined){
+			    	newelem = this
+			    	return newelem
+		    	}
+	    	})
+	    	
+	    	$(newelem).attr("id",makeid())
+	    	
+	    	
+/*
+	    	$(element).attr("id",makeid())
+	    	console.log($(element))
+*/
+	    	//create a new object based on type
+	    	if ($(element).hasClass("element-switch")){
+		    	elemtype = "switch"
+	    	} else if ($(element).hasClass("element-button")){
+		    	elemtype = "button"
+	    	} else if($(element).hasClass("element-slider")){
+		    	elemtype = "slider"
+	    	}
+	    	
+	    	scan()
+	     }
+	     
+	     updateoption = function(id,type){
+		     console.log(id)
+		     console.log(type)
+		     
+		     
+		     
+		     if (type=="switch"){
+			    html = '<div class="element-options"><p class="element-type lead">Switch</p><div class="element-inputs">'
+			    html += '<div class="input-wrapper"><label>Give your switch a variable name:</label><input type="text" id="name-'+id+'" placeholder="Name"></div>'
+			    html += '<div class="input-wrapper"><label>Name your "On" position:</label><input type="text" id="label-on-'+id+'" placeholder="On label" value="Switch On"></div>'
+			    html += '<div class="input-wrapper"><label>Name your "Off" position:</label><input type="text" id="label-off-'+id+'" placeholder="Off label" value="Switch Off"></div>'
+			    html += '</div></div>'
+			    $(".options").append(html)
+			    
+			    //set to existing value
+			     $("#name-"+id).val($("#"+id).attr("data-name"))
+			     $("#label-on-"+id).val($("#"+id).attr("data-label-on"))
+			     $("#label-off-"+id).val($("#"+id).attr("data-label-off"))
+			     
+			    //set change listeners
+			    $("#name-"+id).keyup(function(){
+				    $("#"+id).attr("data-name",$(this).val())
+			    })
+			    $("#label-on-"+id).keyup(function(){
+				    $("#"+id).attr("data-label-on",$(this).val())
+				    $("#"+id).children(".btn-group").children(".switch-on").text($(this).val())
+			    })
+			    $("#label-off-"+id).keyup(function(){
+				    $("#"+id).attr("data-label-off",$(this).val())
+				    $("#"+id).children(".btn-group").children(".switch-off").text($(this).val())
+			    })
+			    
+			    
+		     } else if (type=="button"){
+			     html = '<div class="element-options"><p class="element-type lead">Button</p><div class="element-inputs">'
+			     html += '<div class="input-wrapper"><label>Give your button a variable name:</label><input type="text" id="name-'+id+'" placeholder="Name"></div>'
+			     html += '<div class="input-wrapper"><label>Give your button a label:</label><input type="text" id="label-'+id+'" placeholder="Button label" value="Push Me"></div>'
+			     html += '</div></div>'
+			     $(".options").append(html)
+			     
+			     //set to existing value
+			     $("#name-"+id).val($("#"+id).attr("data-name"))
+			     $("#label-"+id).val($("#"+id).attr("data-label"))
+			     
+			     //set change listeners
+			     $("#name-"+id).keyup(function(){
+				    $("#"+id).attr("data-name",$(this).val())
+				 })
+				 $("#label-"+id).keyup(function(){
+				    $("#"+id).attr("data-label",$(this).val())
+				    $("#"+id).children(".button").text($(this).val())
+				 })
+			     
+			     
+		     } else if (type=="slider"){
+			     html = '<div class="element-options"><p class="element-type lead">Slider</p><div class="element-inputs">'
+			     html += '<div class="input-wrapper"><label>Give your slider a variable name:</label><input type="text" id="name-'+id+'" placeholder="Name"></div><div class="clearfix"></div>'
+			     html += '<div class="input-wrapper"><label>Minimum value:</label><input type="text" id="min-'+id+'" placeholder="Min Value" value="0"></div>'
+			     html += '<div class="input-wrapper"><label>Maximum value:</label><input type="text" id="max-'+id+'" placeholder="Max Value" value="255"></div>'
+			     html += '<div class="input-wrapper"><label>Increment:</label><input type="text" id="inc-'+id+'" placeholder="Increment" value="1"></div>'
+			     html += '</div></div>'
+			     $(".options").append(html)
+			     
+			     //set to existing value
+			     $("#name-"+id).val($("#"+id).attr("data-name"))
+			     $("#max-"+id).val($("#"+id).attr("data-max"))
+			     $("#min-"+id).val($("#"+id).attr("data-min"))
+			     $("#inc-"+id).val($("#"+id).attr("data-inc"))
+			     
+			     //set change listeners
+			     $("#name-"+id).keyup(function(){
+				    $("#"+id).attr("data-name",$(this).val())
+				 })
+				 $("#max-"+id).keyup(function(){
+				    $("#"+id).attr("data-max",$(this).val())
+				 })
+				 $("#min-"+id).keyup(function(){
+				    $("#"+id).attr("data-min",$(this).val())
+				 })
+				 $("#inc-"+id).keyup(function(){
+				    $("#"+id).attr("data-inc",$(this).val())
+				 })
+		     }
+		     
+		     
+	     }
+	     
+	     updatecode = function(id,type){
+	     	console.log("updating code...")
+		     if (type=="switch"){
+		     	//add listener code
+			    html = '&nbsp; skynet.<span class="blue">listen</span>("<span class="code-name-'+id+'"></span>",<span class="code-name-'+id+'"></span>Listener(data));</br>'
+			    $("#listeners").append(html)
+			    //add function stubs
+			    html = '<br><br>void = <span class="code-name-'+id+'"></span>Listener(data){</br>&nbsp; //this function runs everytime "<span class="code-name-'+id+'"></span>" is switched </br>&nbsp; //data is a boolean value: true ("<span class="code-label-on-'+id+'"></span>") or false ("<span class="code-label-off-'+id+'"></span>")<br>}'
+			    $("#functionstubs").append(html)
+			    
+			    //set to existing value
+			    $(".code-name-"+id).text($("#name-"+id).val())
+			    $(".code-label-on-"+id).text($("#label-on-"+id).val())
+			    $(".code-label-off-"+id).text($("#label-off-"+id).val())
+			    //register change listener
+			    $("#name-"+id).keyup(function(){
+				    $(".code-name-"+id).text($(this).val())
+			    })
+			    $("#label-on-"+id).keyup(function(){
+				    $(".code-label-on-"+id).text($(this).val())
+			    })
+			    $("#label-off-"+id).keyup(function(){
+				    $(".code-label-off-"+id).text($(this).val())
+			    })
+			    
+			    
+		     }else if (type=="button"){
+		     	//add listener code
+			    html = '&nbsp; skynet.<span class="blue">listen</span>("<span class="code-name-'+id+'"></span>",<span class="code-name-'+id+'"></span>Listener());<br>'
+			    $("#listeners").append(html)
+			    //add function stubs
+			    html = '<br><br>void = <span class="code-name-'+id+'"></span>Listener(){</br>&nbsp; //this function runs every time "<span class="code-name-'+id+'"></span>" is pressed </br>}'
+			    $("#functionstubs").append(html)
+			    //set to existing value
+			    $(".code-name-"+id).text($("#name-"+id).val())
+			    //register change listener
+			    $("#name-"+id).keyup(function(){
+				    $(".code-name-"+id).text($(this).val())
+			    })
+			    
+		     } else if (type=="slider"){
+			     //add listener code
+			    html = '&nbsp; skynet.<span class="blue">listen</span>("<span class="code-name-'+id+'"></span>",<span class="code-name-'+id+'"></span>Listener(data));<br>'
+			    $("#listeners").append(html)
+			    //add function stubs
+			    html = '<br><br>void = <span class="code-name-'+id+'"></span>Listener(data){</br>&nbsp; //this function runs every time "<span class="code-name-'+id+'"></span>" is changed </br>&nbsp; //data is an integer between <span class="code-min-'+id+'"></span> and <span class="code-max-'+id+'"></span><br>}'
+			    $("#functionstubs").append(html)
+			    //set to existing values
+			    $(".code-name-"+id).text($("#name-"+id).val())
+			    $(".code-min-"+id).text($("#min-"+id).val())
+			    $(".code-max-"+id).text($("#max-"+id).val())
+			    //register change listener
+			    $("#name-"+id).keyup(function(){
+				    $(".code-name-"+id).text($(this).val())
+			    })
+			    $("#min-"+id).keyup(function(){
+				    $(".code-min-"+id).text($(this).val())
+			    })
+			    $("#max-"+id).keyup(function(){
+				    $(".code-max-"+id).text($(this).val())
+			    })
+			 }
+	     }
+	     
+	     scan = function(){
+	     	$(".options").empty()
+	     	$("#listeners").empty()
+	     	$("#functionstubs").empty()
+		     $("#sortable >").each(function(){
+		     	
+		     	id = $(this).attr('id')
+		     	
+			     if ($(this).hasClass("element-switch")){
+			     	updateoption(id,"switch")
+			     	updatecode(id,"switch")
+			    	
+		    	} else if ($(this).hasClass("element-button")){
+		    		updateoption(id, "button")
+		    		updatecode(id, "button")
+		    	} else if($(this).hasClass("element-slider")){
+		    		updateoption(id,"slider")
+					updatecode(id, "slider")
+		    	}
+		    	
+		     })
+	     }
+	    
+	    $(function() {
+		    $( "#sortable" ).sortable({
+		      revert: true,
+		      activate: function(event,ui){
+			      $("div").not(ui.item).not("#buildrow").not(".container,#appspan,.content,#sortable-prompt,.navbar,.navbar-inner,.nav-collapse,.banner").animate({"opacity":0.5},400);
+			      $("#sortable-prompt").animate({opacity:1},400)
+		      },
+		      deactivate: function(){
+			      $("div").animate({"opacity":1},200)
+			      $("#sortable-prompt").animate({opacity:0},400)
+			  },
+		      receive: function(event,ui){
+		      	
+			      drop(ui.item)
+		      },
+		      update: function(event,ui){
+			      scan()
+		      },
+		      over: function(e, ui) { sortableIn = 1; },
+		        out: function(e, ui) { sortableIn = 0; },
+		        beforeStop: function (event, ui) {
+		            newItem = ui.item;
+		            if (sortableIn == 0) { 
+		              ui.item.remove(); 
+		              scan()
+		              console.log("removed!")
+		           }
+		        },
+		    });
+		    $( ".draggable" ).draggable({
+		      connectToSortable: "#sortable",
+		      helper: "clone",
+		      revert: "invalid"
+		    });
+		    $( "ul, li" ).disableSelection();
+		    
+		    $("#scrolltooptions").click(function(){
+			    $('html,body').animate({
+		        scrollTop: $(".options-container").offset().top-70},
+		        'slow');
+		    })
+		  });
+    </script>
+    
+
+  </body>
+</html>

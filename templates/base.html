@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{%block title%}{%endblock%}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+/*         padding-top: 60px; */
+        padding-bottom: 40px;
+      }
+    </style>
+    
+    {%block style%}
+    {%endblock%}
+    
+<!--     <link href="../css/bootstrap-responsive.min.css" rel="stylesheet"> -->
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Skynet</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    	
+    	<style type="text/css">
+	    	.preview{
+		    	text-align: center;
+	    	}
+	    	
+/* 	    	global */
+	    	
+	    	.controloptions{
+		    	text-align: left;
+	    	}
+	    	
+	    	.center{
+		    	margin-left: auto;
+		    	margin-right: auto;
+		    	float: none;
+		    	clear: both;
+	    	}
+	    	
+	    	.control{
+		    	margin-bottom: 20px;
+	    	}
+	    	
+    	</style>
+
+		<div class="row">
+				
+				<div class="span12 spacer visible-desktop" style="height:60px;"></div>
+			
+				<object type="application/x-shockwave-flash" data="http://www.justin.tv/widgets/live_embed_player.swf?channel=holmesal" id="live_embed_player_flash" height="300" width="400" bgcolor="#000000"><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.justin.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.justin.tv&channel=holmesal&auto_play=false&start_volume=0.5" /></object><a href="http://www.justin.tv/holmesal#r=-rid-&amp;s=em" class="trk" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline; text-align:center">Watch live video from holmesal on www.justin.tv</a>
+			
+				<div class="preview">
+					
+					<div class="span8 center"><div class="alert alert-info">On this page, you can change the options for each of your controls.</div></div>
+				
+					<div class="span6 center">
+						<p class="lead">Unnamed project</p>
+						<div class="well controloptions">
+							<p class="lead">Change your title</p>
+							<input type="text" id="input-title" placeholder="Unnamed project">
+						</div>
+					</div>
+					
+					<div class="span12">
+						<button class="btn btn-large control">Switch on</button>
+					</div>
+					
+					<div class="span6 center">
+						<div class="well controloptions">
+							<p class="lead">Switch options</p>
+							<p>Nothing here yet</p>
+						</div>
+					</div>
+					
+					<div class="span8 center"><div class="alert alert-info">Change your project privacy to allow others to access your device.</div></div>
+					<div class="span6 center">
+						<div class="well controloptions">
+							<p class="lead">Project Privacy</p>
+							<label class="radio">
+								<input type="radio" name="radio-privacy" value="open">
+								<strong>Open</strong> - anyone can view and control this project.
+							</label>
+							<label class="radio">
+								<input type="radio" name="radio-privacy" value="public" checked>
+								<strong>Public</strong> - anyone can view this project, but only you can control it.
+							</label>
+							<label class="radio">
+								<input type="radio" name="radio-privacy" value="public">
+								<strong>Invisible</strong> - only you can view and control this project.
+							</label>
+						</div>
+					</div>
+					
+					
+				</div>
+			
+			<hr>
+			
+			<div class="span12"><a href="#" class="btn btn-success btn-large pull-right">Save and Launch</a></div>
+		</div>
+    	
+      
+      
+
+      <hr>
+
+      <footer>
+        <p>&copy; Skynet 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    
+    {%block script%}
+    {%endblock%}
+
+  </body>
+</html>

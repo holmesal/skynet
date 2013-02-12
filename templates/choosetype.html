@@ -1,0 +1,20 @@
+{%extends "/templates/base.html"%}
+
+{%block title%}Choose your controller{%endblock%}
+
+{%block content%}
+<div class="row">
+	<div class="span12"><p class="lead">What would you like to build?</p></div>
+	<div class="span4">
+	  <h2>Controller</h2>
+	  <p>Flip a switch, press a button. Control your arduino from the web.</p>
+	  <p><a class="btn btn-success" href="/build/controller">Control your arduino &raquo;</a></p>
+	</div>
+	<hr>
+	<div class="span4">
+	  <h2>Listener</h2>
+	  <p>Send data from your arduino, and view it on the web.</p>
+	  <p><a class="btn btn-primary" href="/build/listener">Listen to your arduino &raquo;</a></p>
+	</div>
+</div>
+{%endblock%}
